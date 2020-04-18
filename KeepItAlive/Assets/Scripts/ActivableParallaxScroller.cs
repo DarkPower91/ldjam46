@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Renderer))]
-public class ActivableParallaxScroller : MonoBehaviour {
+public class ActivableParallaxScroller : MonoBehaviour 
+{
 
     #region Serialzed fields
     [Readonly]
@@ -34,7 +35,7 @@ public class ActivableParallaxScroller : MonoBehaviour {
 
     }
 
-    private void Start()
+    void Start()
     {
     }
 
@@ -49,12 +50,12 @@ public class ActivableParallaxScroller : MonoBehaviour {
         }
     }
 
-    void StartScroll()
+    public void StartScroll()
     {
         m_scroll = true;
     }
 
-    void EndScroll()
+    public void EndScroll()
     {
         m_scroll = false;
     }
