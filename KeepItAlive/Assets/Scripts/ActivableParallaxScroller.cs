@@ -15,6 +15,9 @@ public class ActivableParallaxScroller : MonoBehaviour
     #endregion
 
     #region Private fields
+    private static float m_minDistance = 0;
+    private static float m_maxDistance = 100;
+
     private Vector2 m_startOffset;
     private float m_lastOffset;
     private float m_scrollOffsetByTime;
@@ -27,7 +30,7 @@ public class ActivableParallaxScroller : MonoBehaviour
     {
         m_renderer = GetComponent<Renderer>();
         m_startOffset = m_renderer.sharedMaterial.GetTextureOffset("_MainTex");
-        m_scrollSpeed = 1 -  Mathf.Clamp01(Mathf.Abs(Camera.main.transform.position.z / transform.position.z));
+        m_scrollSpeed = 1 -  MathUtils.GetClampedPercentage(transform.position.z, m_minDistance, m_maxDistance);
         m_lastOffset = 0.0f;
 
     }
