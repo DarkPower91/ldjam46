@@ -11,6 +11,7 @@ public class OscillatingFlavour : MonoBehaviour
     public Sprite[] neutrinoSprites;
     [Readonly]
     public Flavours idx = Flavours.electronic;
+    public FlavourDefinition m_GameOverFlavorMessage = null;
     #endregion
 
     #region Private fields
@@ -89,6 +90,7 @@ public class OscillatingFlavour : MonoBehaviour
             if (otherFlavour.flavour == idx) 
             {
                 FlowManager.SetFlowState(GameState.GameOver);
+                m_GameOverFlavorMessage.SetFlavour(idx);
             }
         }
     }

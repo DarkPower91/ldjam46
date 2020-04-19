@@ -14,7 +14,7 @@ public class BasicEnemy : MonoBehaviour
     void Start()
     {
         m_Rigidbody = this.GetComponent<Rigidbody2D>();
-        m_Rigidbody.velocity = new Vector2(-m_Speed, 0);
+        m_Rigidbody.velocity = new Vector2(-m_Speed, m_Rigidbody.velocity.y);
         m_ScreenBounds = ScreenBounds.GetScreenBounds();
     }
 

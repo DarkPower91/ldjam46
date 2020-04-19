@@ -15,15 +15,9 @@ public class FlavourDefinition : MonoBehaviour
     #region Public names
     public Flavours flavour;
     #endregion
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void SetFlavour(Flavours newFlavour)
     {
-        
+        flavour = newFlavour;
     }
 }

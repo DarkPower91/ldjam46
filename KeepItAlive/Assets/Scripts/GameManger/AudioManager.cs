@@ -21,6 +21,11 @@ public class AudioManager : MonoBehaviour
         FlowManager.OnGameStateChanged += OnGameStateChanged;
     }
 
+    void OnDestroy() 
+    {
+        FlowManager.OnGameStateChanged -= OnGameStateChanged;
+    }
+
     void OnGameStateChanged(GameState newState)
     {
         if(newState != m_PreviousGameState)
