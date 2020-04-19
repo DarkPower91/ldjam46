@@ -11,6 +11,7 @@ public class OscillatingFlavour : MonoBehaviour
     [Readonly]
     public Flavours CurrentFlavour = Flavours.electronic;
     public FlavourDefinition m_GameOverFlavorMessage = null;
+    public GameObject ExplosionAnimation = null;
     #endregion
 
     #region Private fields
@@ -49,9 +50,16 @@ public class OscillatingFlavour : MonoBehaviour
     {
         while (true) 
         {    
-            yield return new WaitForSeconds(changeTime); 
-            CurrentFlavour = m_NextFlavour;
-            animator.SetInteger( "flavour", (int) CurrentFlavour );
+            if(FlowManager.GetGameState() == GameState.InGame)
+            {
+                CurrentFlavour = m_NextFlavour;
+                animator.SetInteger( "flavour", (int) CurrentFlavour );
+                yield return new WaitForSeconds(changeTime); 
+            }
+            else
+            {
+                yield return null;
+            }
         }
     }
 
@@ -62,9 +70,29 @@ public class OscillatingFlavour : MonoBehaviour
         {
             if (otherFlavour.flavour == CurrentFlavour) 
             {
+                Destroy(other.gameObject);
                 FlowManager.SetFlowState(GameState.GameOver);
                 m_GameOverFlavorMessage.SetFlavour(CurrentFlavour);
+                if(ExplosionAnimation != null)
+                {
+                    ExplosionAnimation.SetActive(true);
+                    StartCoroutine(DisableFx());
+                    
+                }
+                this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                this.gameObject.GetComponent<Collider2D>().enabled = false;
             }
         }
+    }
+
+    private IEnumerator DisableFx()
+    {
+        yield return null;
+
+        float clipDuration = ExplosionAnimation.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
+
+        yield return new WaitForSeconds(clipDuration);
+
+        ExplosionAnimation.SetActive(false);
     }
 }
