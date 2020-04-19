@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Penemy2_Anim
+  m_Name: Penemy1_Anim2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,10 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3699789013682733626, guid: e78bfafb3246b4dc897bcb19a31d9eba,
+      value: {fileID: 1958806534847319400, guid: 6829cd3c0ef7c4edcabac5b5ff544778,
         type: 3}
-    - time: 1.5833334
-      value: {fileID: 6493470650351295616, guid: e78bfafb3246b4dc897bcb19a31d9eba,
-        type: 3}
-    - time: 2
-      value: {fileID: 6493470650351295616, guid: e78bfafb3246b4dc897bcb19a31d9eba,
+    - time: 0.083333336
+      value: {fileID: 6598660027793066568, guid: 6829cd3c0ef7c4edcabac5b5ff544778,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,15 +44,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -3699789013682733626, guid: e78bfafb3246b4dc897bcb19a31d9eba, type: 3}
-    - {fileID: 6493470650351295616, guid: e78bfafb3246b4dc897bcb19a31d9eba, type: 3}
-    - {fileID: 6493470650351295616, guid: e78bfafb3246b4dc897bcb19a31d9eba, type: 3}
+    - {fileID: 1958806534847319400, guid: 6829cd3c0ef7c4edcabac5b5ff544778, type: 3}
+    - {fileID: 6598660027793066568, guid: 6829cd3c0ef7c4edcabac5b5ff544778, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.0833333
+    m_StopTime: 0.16666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

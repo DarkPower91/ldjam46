@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5559480417340451747}
   - component: {fileID: -3572538671372723987}
   - component: {fileID: 7037348427361318039}
+  - component: {fileID: 3004789435527524751}
   - component: {fileID: 6281266811879439879}
   m_Layer: 0
   m_Name: penemy1
@@ -75,10 +76,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5382862766942310033, guid: dd96b0d3a534f4eb39349605556133ab,
+  m_Sprite: {fileID: -2234781558563317553, guid: 707a1a0261aac45f5aaf3e3a484f6f8e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4.56, y: 4.64}
@@ -155,6 +156,32 @@ CircleCollider2D:
   m_Offset: {x: -0.03, y: -0.17}
   serializedVersion: 2
   m_Radius: 0.39
+--- !u!61 &3004789435527524751
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746232068772996590}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.13952065, y: 0.3315885}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.52, y: 1.5466666}
+    newSize: {x: 4.56, y: 4.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.55241394, y: 0.5790806}
+  m_EdgeRadius: 0
 --- !u!114 &6281266811879439879
 MonoBehaviour:
   m_ObjectHideFlags: 0
