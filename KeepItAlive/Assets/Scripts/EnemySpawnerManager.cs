@@ -7,17 +7,24 @@ public class EnemySpawnerManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> m_EnemyDB = new List<GameObject>();
     [SerializeField]
-    private float m_SpawnDelay = 1.0f;
-    private float changeTime = 2;
-    private float increasingRate = 2;
-    private int iteratorForSpawn = 0;
-    private int maxTimeForChangeOfIncreasingIteratorForSpawn = 3;
+    private float m_SpawnDelay = 100.0f;
+    public float changeTime = 1000.0f;
+    public int increasingRate = 2;
+    public int iteratorForSpawn = 0;
+    public int maxTimeForChangeOfIncreasingIteratorForSpawn = 150;
+    public float minSpeed = 1.5f;
+    public float maxSpeed = 8.0f;
 
     void Start()
     {
         StartCoroutine(SpawnWave());   
 
         StartCoroutine(changeSpawnRate());
+    }
+
+    private void Update() 
+    {
+        
     }
 
     IEnumerator SpawnWave()
@@ -41,7 +48,7 @@ public class EnemySpawnerManager : MonoBehaviour
         Vector2 screenBounds = ScreenBounds.GetScreenBounds();
         float yPosition = Random.Range(-screenBounds.y + enemyBBy/2, screenBounds.y - enemyBBy/2);
 
-        float speed = Random.Range(0.0f, 5.0f);
+        float speed = Random.Range(minSpeed, maxSpeed);
 
  
         enemy.transform.position = new Vector2(screenBounds.x * 1.5f, yPosition);
@@ -56,19 +63,23 @@ public class EnemySpawnerManager : MonoBehaviour
             yield return new WaitForSeconds(changeTime); 
             
             if(FlowManager.GetGameState() == GameState.InGame)
-           {
+            {
 
                if (iteratorForSpawn >= maxTimeForChangeOfIncreasingIteratorForSpawn) 
                {
                    increasingRate++;
                    iteratorForSpawn = 1;
+                   
+                   if (maxTimeForChangeOfIncreasingIteratorForSpawn>=2) {
+                       maxTimeForChangeOfIncreasingIteratorForSpawn--;
+                   }
 
                } else 
                {
                    iteratorForSpawn++;
                }
 
-               m_SpawnDelay = (float) m_SpawnDelay / Random.Range(1, increasingRate + 1);
+               m_SpawnDelay = (float) m_SpawnDelay / Random.Range(1.0f, ( (float) increasingRate + 1.0f));
            }
             
         }
