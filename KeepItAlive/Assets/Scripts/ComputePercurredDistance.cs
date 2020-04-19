@@ -41,6 +41,6 @@ public class ComputePercurredDistance : MonoBehaviour
             per cui
             1 yrs  = 1 * 60*60*24*365 sec
         */
-        neutrinoPercurredDistance = currentTime*60*60*24*365;
+        neutrinoPercurredDistance = currentTime*60*60*24*365; 
     }
 }
