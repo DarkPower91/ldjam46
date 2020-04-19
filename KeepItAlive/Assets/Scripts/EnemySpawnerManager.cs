@@ -19,7 +19,10 @@ public class EnemySpawnerManager : MonoBehaviour
         while(true) //TODO give control to start the wave
         {
             yield return new WaitForSeconds(m_SpawnDelay);
-            SpawnEnemy();
+            if(FlowManager.GetGameState() == GameState.InGame)
+           {
+               SpawnEnemy();
+           }
         }
     }
 

@@ -10,11 +10,15 @@ public enum GameState
     GameOver
 }
 
+public delegate void GameStateChanged(GameState newState);
+
 public class FlowManager : MonoBehaviour
 {
     #region Private fields
     private static GameState m_CurrentState = GameState.MainMenu;
     #endregion
+
+    public static event GameStateChanged OnGameStateChanged = null;
 
     public static GameState GetGameState()
     {
@@ -39,6 +43,11 @@ public class FlowManager : MonoBehaviour
                 Time.timeScale = 0;
                 break;
             }
+        }
+        
+        if(OnGameStateChanged != null)
+        {
+            OnGameStateChanged(m_CurrentState);
         }
     }
 }
