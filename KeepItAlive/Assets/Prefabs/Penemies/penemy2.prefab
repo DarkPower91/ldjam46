@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2288180665649424735}
   - component: {fileID: -4867722715260731612}
   - component: {fileID: 8139558977183856884}
+  - component: {fileID: 1629922137099043297}
   m_Layer: 0
   m_Name: penemy2
   m_TagString: Untagged
@@ -148,9 +149,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06, y: -0.14}
   serializedVersion: 2
   m_Radius: 0.41
+--- !u!114 &1629922137099043297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173419114285362148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66af123f86f4813429c1305b50ef379a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavour: 1

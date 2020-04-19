@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Public fields
     public Vector3 velocity;
+    public Vector3 startingPosition;
 
     /* public camera cam; */
     #endregion
@@ -27,15 +28,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
-        screenBounds = Camera.main.ScreenToWorldPoint(
-            new Vector3(
-                Screen.width, 
-                Screen.height, 
-                Camera.main.transform.position.z
-                )
-            );
+        transform.position = startingPosition;
 
-        
+        screenBounds = ScreenBounds.GetScreenBounds();
+
         sprite = GetComponent<SpriteRenderer>();
 
         objectSize[0] = sprite.bounds.size.x / 2;
@@ -54,9 +50,13 @@ public class PlayerController : MonoBehaviour
     {    
         axis_position = transform.position; 
 
-        for (int i=0; i < 3-1; i++) { 
+        for (int i=0; i < 3; i++) { 
 
-            axis_position[i] += Input.GetAxis(command[i]) * velocity[i] * Time.deltaTime;
+            if (i!=2) {
+                axis_position[i] += Input.GetAxis(command[i]) * velocity[i] * Time.deltaTime;
+            } else {
+                axis_position[i] = 0;
+            }
              
         } 
 
