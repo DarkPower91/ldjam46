@@ -6,9 +6,9 @@ public class ManagersLoader : MonoBehaviour
 {
     #region Serialized fields
     [SerializeField]
-    private  GameObject m_FlowManager;
+    private  GameObject m_FlowManager = null;
     [SerializeField]
-    private GameObject m_MusicManager;
+    private GameObject m_MusicManager = null;
     #endregion
 
     // Start is called before the first frame update

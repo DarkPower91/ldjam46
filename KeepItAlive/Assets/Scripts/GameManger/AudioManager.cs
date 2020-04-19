@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip m_InGameSound = null;
 
     private AudioSource m_BackgroundMusicSource =  null;
+    private GameState m_PreviousGameState = GameState.MainMenu;
 
     void Start()
     {
@@ -22,20 +23,24 @@ public class AudioManager : MonoBehaviour
 
     void OnGameStateChanged(GameState newState)
     {
-        m_BackgroundMusicSource.Stop();
-        switch(newState)
+        if(newState != m_PreviousGameState)
         {
-            case GameState.MainMenu:
+            m_BackgroundMusicSource.Stop();
+            switch(newState)
             {
-                m_BackgroundMusicSource.clip = m_MainMenuSound;
-                break;
+                case GameState.MainMenu:
+                {
+                    m_BackgroundMusicSource.clip = m_MainMenuSound;
+                    break;
+                }
+                case GameState.InGame:
+                {
+                    m_BackgroundMusicSource.clip = m_InGameSound;
+                    break;
+                }
             }
-            case GameState.InGame:
-            {
-                m_BackgroundMusicSource.clip = m_InGameSound;
-                break;
-            }
+            m_PreviousGameState = newState;
+            m_BackgroundMusicSource.Play();
         }
-        m_BackgroundMusicSource.Play();
     }
 }

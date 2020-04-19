@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7421064427245288767}
   - component: {fileID: 7421064427245288764}
   - component: {fileID: 7421064427245288752}
+  - component: {fileID: 674328282}
   m_Layer: 0
   m_Name: SpaceDepth
   m_TagString: Untagged
@@ -109,6 +110,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scrollSpeed: 0
   m_contiuosMovement: 1
+--- !u!114 &674328282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421064427245288765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleWidth: 1
+  scaleHeight: 1
 --- !u!1 &7421064427263063831
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +137,7 @@ GameObject:
   - component: {fileID: 7421064427263063819}
   - component: {fileID: 7421064427263063816}
   - component: {fileID: 7421064427263063817}
+  - component: {fileID: 4470760466881592278}
   m_Layer: 0
   m_Name: Stallone
   m_TagString: Untagged
@@ -218,6 +234,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scrollSpeed: 0
   m_contiuosMovement: 1
+--- !u!114 &4470760466881592278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421064427263063831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleWidth: 1
+  scaleHeight: 1
 --- !u!1 &7421064427500200997
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +261,7 @@ GameObject:
   - component: {fileID: 7421064427500200998}
   - component: {fileID: 7421064427500200999}
   - component: {fileID: 7421064427500200996}
+  - component: {fileID: 2014070617914569561}
   m_Layer: 0
   m_Name: Nuvolette
   m_TagString: Untagged
@@ -327,6 +358,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scrollSpeed: 0
   m_contiuosMovement: 1
+--- !u!114 &2014070617914569561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421064427500200997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleWidth: 1
+  scaleHeight: 0
 --- !u!1 &7421064427572890032
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +385,7 @@ GameObject:
   - component: {fileID: 7421064427572890036}
   - component: {fileID: 7421064427572890037}
   - component: {fileID: 7421064427572890034}
+  - component: {fileID: 3712136563522845075}
   m_Layer: 0
   m_Name: Stellinini
   m_TagString: Untagged
@@ -436,6 +482,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scrollSpeed: 0
   m_contiuosMovement: 1
+--- !u!114 &3712136563522845075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421064427572890032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleWidth: 1
+  scaleHeight: 1
 --- !u!1 &7421064427939292153
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +509,7 @@ GameObject:
   - component: {fileID: 7421064427939292157}
   - component: {fileID: 7421064427939292154}
   - component: {fileID: 7421064427939292155}
+  - component: {fileID: 4403011640358325692}
   m_Layer: 0
   m_Name: Striscione
   m_TagString: Untagged
@@ -545,6 +606,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scrollSpeed: 0
   m_contiuosMovement: 1
+--- !u!114 &4403011640358325692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421064427939292153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleWidth: 1
+  scaleHeight: 1
 --- !u!1 &7421064428173914144
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +633,7 @@ GameObject:
   - component: {fileID: 7421064428173914148}
   - component: {fileID: 7421064428173914149}
   - component: {fileID: 7421064428173914146}
+  - component: {fileID: 4446687270177402532}
   m_Layer: 0
   m_Name: Stelline
   m_TagString: Untagged
@@ -654,6 +730,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_scrollSpeed: 0
   m_contiuosMovement: 1
+--- !u!114 &4446687270177402532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421064428173914144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleWidth: 1
+  scaleHeight: 1
 --- !u!1 &7421064428406789800
 GameObject:
   m_ObjectHideFlags: 0
