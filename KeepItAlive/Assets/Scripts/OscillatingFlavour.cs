@@ -8,89 +8,62 @@ using UnityEngine;
 public class OscillatingFlavour : MonoBehaviour
 {
     #region Public fields
-    public Sprite[] neutrinoSprites;
     [Readonly]
-    public Flavours idx = Flavours.electronic;
+    public Flavours CurrentFlavour = Flavours.electronic;
     public FlavourDefinition m_GameOverFlavorMessage = null;
     #endregion
 
     #region Private fields
     private float changeTime = 1;
-    private int availableNeutrinos;
+    private int availableNeutrinos = (int)Flavours.count;
     private Animator animator;
+    private Flavours m_NextFlavour;
     #endregion
 
-    // My private functions
     private Flavours randomNeutrino() 
     {
         return  (Flavours) Random.Range(0, availableNeutrinos);
     }
 
-
-    // Unity default functions
-
-    // Awake
-    private void Awake() {
-
+    private void Awake() 
+    {
         animator = GetComponent<Animator>(); 
-
-        if (neutrinoSprites.Length==0) 
-        {
-            neutrinoSprites = Resources.LoadAll<Sprite>("Neutrino_Sprites");
-        }
-
-        availableNeutrinos = (int) Mathf.Min((float) Flavours.count, (float) neutrinoSprites.Length);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(flavourChange());
-
-        idx = randomNeutrino();
-
-        // GetComponent<SpriteRenderer>().sprite = neutrinoSprites[ (int) idx ];
-
-        animator.SetInteger( "flavour", (int) idx );
+        m_NextFlavour = CurrentFlavour = randomNeutrino();
+        animator.SetInteger( "flavour", (int) CurrentFlavour );
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-
-
-    // My personal functions
-    private IEnumerator flavourChange () 
-    {
-        while (true) {
-            
-            yield return new WaitForSeconds(changeTime); 
-
-            Flavours index = randomNeutrino();
-
-            while (index == idx) 
-            {
-                index = randomNeutrino();
-            }
-
-            idx = index;
-
-            // GetComponent<SpriteRenderer>().sprite = neutrinoSprites[ (int) idx ];
-            animator.SetInteger( "flavour", (int) idx );
+        if(m_NextFlavour == CurrentFlavour)
+        {
+            m_NextFlavour = randomNeutrino();
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other) {
+    private IEnumerator flavourChange() 
+    {
+        while (true) 
+        {    
+            yield return new WaitForSeconds(changeTime); 
+            CurrentFlavour = m_NextFlavour;
+            animator.SetInteger( "flavour", (int) CurrentFlavour );
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other) 
+    {
         FlavourDefinition otherFlavour = other.gameObject.GetComponent<FlavourDefinition>();
-        
         if (otherFlavour != null) 
         {
-            if (otherFlavour.flavour == idx) 
+            if (otherFlavour.flavour == CurrentFlavour) 
             {
                 FlowManager.SetFlowState(GameState.GameOver);
-                m_GameOverFlavorMessage.SetFlavour(idx);
+                m_GameOverFlavorMessage.SetFlavour(CurrentFlavour);
             }
         }
     }

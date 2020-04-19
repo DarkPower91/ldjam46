@@ -726,6 +726,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2349124505704777507, guid: ddcbdf1c61c8f470cb8f88f63987e717,
+        type: 3}
+      propertyPath: m_text
+      value: "You became a \nMiss. W Boson"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddcbdf1c61c8f470cb8f88f63987e717, type: 3}
 --- !u!1001 &3938519595417699297
