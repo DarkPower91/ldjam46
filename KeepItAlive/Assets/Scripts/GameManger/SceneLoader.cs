@@ -7,13 +7,13 @@ public class SceneLoader : MonoBehaviour
 {
     public void OnReloadMainMenu()
     {
-        Time.timeScale = 1;
+        FlowManager.SetFlowState(GameState.MainMenu);
         SceneManager.LoadScene(0);
     }
 
     public void OnReloadGame()
     {
-        Time.timeScale = 1;
+        FlowManager.SetFlowState(GameState.InGame);
         SceneManager.LoadScene(1);
     }
 }

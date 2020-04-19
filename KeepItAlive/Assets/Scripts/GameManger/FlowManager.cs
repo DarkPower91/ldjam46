@@ -1,0 +1,44 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum GameState
+{
+    MainMenu,
+    InGame,
+    InPause,
+    GameOver
+}
+
+public class FlowManager : MonoBehaviour
+{
+    #region Private fields
+    private static GameState m_CurrentState = GameState.MainMenu;
+    #endregion
+
+    public static GameState GetGameState()
+    {
+        return m_CurrentState;
+    }
+
+    public static void SetFlowState(GameState state)
+    {
+        m_CurrentState = state;
+        
+        switch(m_CurrentState)
+        {
+            case GameState.MainMenu:
+            case GameState.InGame:
+            case GameState.GameOver:
+            {
+                Time.timeScale = 1;
+                break;
+            }
+            case GameState.InPause:
+            {
+                Time.timeScale = 0;
+                break;
+            }
+        }
+    }
+}
