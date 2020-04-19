@@ -8,10 +8,16 @@ public class EnemySpawnerManager : MonoBehaviour
     private List<GameObject> m_EnemyDB = new List<GameObject>();
     [SerializeField]
     private float m_SpawnDelay = 1.0f;
+    private float changeTime = 2;
+    private float increasingRate = 2;
+    private int iteratorForSpawn = 0;
+    private int maxTimeForChangeOfIncreasingIteratorForSpawn = 3;
 
     void Start()
     {
         StartCoroutine(SpawnWave());   
+
+        StartCoroutine(changeSpawnRate());
     }
 
     IEnumerator SpawnWave()
@@ -21,7 +27,7 @@ public class EnemySpawnerManager : MonoBehaviour
             yield return new WaitForSeconds(m_SpawnDelay);
             if(FlowManager.GetGameState() == GameState.InGame)
            {
-               SpawnEnemy();
+               SpawnEnemy(); 
            }
         }
     }
@@ -40,5 +46,31 @@ public class EnemySpawnerManager : MonoBehaviour
  
         enemy.transform.position = new Vector2(screenBounds.x * 1.5f, yPosition);
         enemy.GetComponent<BasicEnemy>().SetSpeed(speed);
+    }
+
+    // My personal functions
+    private IEnumerator changeSpawnRate() 
+    {
+        while (true) 
+        {
+            yield return new WaitForSeconds(changeTime); 
+            
+            if(FlowManager.GetGameState() == GameState.InGame)
+           {
+
+               if (iteratorForSpawn >= maxTimeForChangeOfIncreasingIteratorForSpawn) 
+               {
+                   increasingRate++;
+                   iteratorForSpawn = 1;
+
+               } else 
+               {
+                   iteratorForSpawn++;
+               }
+
+               m_SpawnDelay = (float) m_SpawnDelay / Random.Range(1, increasingRate + 1);
+           }
+            
+        }
     }
 }
