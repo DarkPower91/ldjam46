@@ -34,6 +34,7 @@ public class AudioManager : MonoBehaviour
             {
                 m_BackgroundMusicSource.clip = m_InGameSoundLoop;
                 m_BackgroundMusicSource.loop = true;
+                m_BackgroundMusicSource.Play();
             }
         }
     }
