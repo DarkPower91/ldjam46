@@ -7,6 +7,7 @@ TagManager:
   - FlowManager
   - MusicManager
   - Penemy
+  - MuteManager
   layers:
   - Default
   - TransparentFX

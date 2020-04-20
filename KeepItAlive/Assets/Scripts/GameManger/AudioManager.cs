@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource m_BackgroundMusicSource =  null;
     private GameState m_PreviousGameState = GameState.MainMenu;
 
+    private bool isMuted = false;
+
     private float m_IntroLenght = 0.0f;
 
     void Start()
@@ -73,5 +75,16 @@ public class AudioManager : MonoBehaviour
             m_PreviousGameState = newState;
             m_BackgroundMusicSource.Play();
         }
+    }
+
+    public void MuteAudio(bool wantToMute)
+    {
+        isMuted = wantToMute;
+        AudioListener.volume = wantToMute ? 0.0f : 1.0f;
+    }
+    
+    public bool IsMuted()
+    {
+        return isMuted;
     }
 }
