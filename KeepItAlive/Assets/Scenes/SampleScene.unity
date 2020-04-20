@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 1861412513}
   - component: {fileID: 1861412512}
   - component: {fileID: 1861412511}
+  - component: {fileID: 1861412515}
   m_Layer: 5
   m_Name: GameplayCanvas
   m_TagString: Untagged
@@ -539,6 +540,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1861412515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861412510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b4e3fa109c4492694015e9e0f434bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HiddenInFlowState: 4
 --- !u!114 &1932222688 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2349124506805706616, guid: ddcbdf1c61c8f470cb8f88f63987e717,
@@ -788,6 +802,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4833810187930018164, guid: ddcbdf1c61c8f470cb8f88f63987e717,
+        type: 3}
+      propertyPath: playerDistanceComponent
+      value: 
+      objectReference: {fileID: 905827861}
+    - target: {fileID: 4833810187930018164, guid: ddcbdf1c61c8f470cb8f88f63987e717,
+        type: 3}
+      propertyPath: extraTextAfter
+      value: AU
       objectReference: {fileID: 0}
     - target: {fileID: 5211331543515533882, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
