@@ -5,13 +5,13 @@ using UnityEngine;
 public class ComputePercurredDistance : MonoBehaviour
 {
     #region Public fields
-    [Readonly]
     public float neutrinoPercurredDistance = 0.0f;
     #endregion
 
     #region Private fields
     private float currentTime = 0.0f;
     private float startTime = 0.0f;
+    private float powerUpExtra = 0.0f;
     #endregion
 
     private void Awake() {
@@ -47,8 +47,13 @@ public class ComputePercurredDistance : MonoBehaviour
                 In chilometri invece
 
             */
-            neutrinoPercurredDistance =  (63241.08f)*(0.995f)*currentTime/(60*60*24*365.25f); 
+            neutrinoPercurredDistance = powerUpExtra + (63241.08f)*(0.995f)*currentTime/(60*60*24*365.25f); 
         }
         
+    }
+
+    public void addAmount(float amount) 
+    {
+        powerUpExtra += amount;
     }
 }

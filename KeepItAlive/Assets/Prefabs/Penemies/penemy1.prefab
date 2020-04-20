@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -5280861250026520523}
   m_Layer: 0
   m_Name: penemy1
-  m_TagString: Untagged
+  m_TagString: Penemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,4 +209,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ChangeTime: 0.2
-  m_TopSpeed: 5
+  m_MaxTopSpeed: 5

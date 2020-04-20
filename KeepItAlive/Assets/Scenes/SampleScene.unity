@@ -399,6 +399,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4134940158730760143, guid: 3d2de69f921d54c8ebf55b0ef429f8c0,
+        type: 3}
+      propertyPath: m_SpawnDelay
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5835918772321554068, guid: 3d2de69f921d54c8ebf55b0ef429f8c0,
         type: 3}
       propertyPath: m_Name
@@ -1007,6 +1012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GinoPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938519595107000738, guid: 14a75b710945c7b4992c5212e14e695c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3938519595107000741, guid: 14a75b710945c7b4992c5212e14e695c,
         type: 3}

@@ -15,7 +15,6 @@ public class ShowPercurredDistanceUI : MonoBehaviour
 
     #region Private fields
     private Text scoreText;
-    private float factorRound = 10000.0f;
     private float approxDist = 0.0f;
     #endregion
     
@@ -32,7 +31,6 @@ public class ShowPercurredDistanceUI : MonoBehaviour
         {
             if (FlowManager.GetGameState() == GameState.InGame || FlowManager.GetGameState() == GameState.GameOver) 
             {
-                //approxDist = Mathf.Round( factorRound*(playerDistanceComponent.neutrinoPercurredDistance) )/ factorRound;
                 approxDist = playerDistanceComponent.neutrinoPercurredDistance;
                 string distToStiring = approxDist.ToString();
 
