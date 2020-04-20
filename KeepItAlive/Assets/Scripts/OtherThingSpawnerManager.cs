@@ -18,7 +18,6 @@ public class OtherThingSpawnerManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnWave());   
-
     }
 
     // Update is called once per frame
@@ -48,15 +47,11 @@ public class OtherThingSpawnerManager : MonoBehaviour
 
         float otherBBy = other.GetComponent<SpriteRenderer>().bounds.size.y;
         Vector2 screenBounds = ScreenBounds.GetScreenBounds();
-        //float yPosition = Random.Range(-screenBounds.y + otherBBy/2, screenBounds.y - otherBBy/2);
         float yPosition = Random.Range(-3*screenBounds.y + otherBBy/2, 3*screenBounds.y - otherBBy/2);
 
         float speed = - Random.Range(minSpeed, maxSpeed);
  
         other.transform.position = new Vector3(screenBounds.x * 1.5f, yPosition, 10.0f);
-
-        float scalingOther = Random.Range(4.5f, 7.5f);
-        other.transform.localScale = new Vector3(scalingOther, scalingOther, 1.0f);
 
         other.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0.0f);
 

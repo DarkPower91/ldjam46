@@ -263,7 +263,7 @@ MonoBehaviour:
   neutrinoPercurredDistance: 0
   playerDistanceComponent: {fileID: 905827861}
   extraTextBefore: 'Distance: '
-  extraTextAfter: ' light-years'
+  extraTextAfter: ' AU'
 --- !u!114 &939117573
 MonoBehaviour:
   m_ObjectHideFlags: 0

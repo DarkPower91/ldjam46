@@ -30,9 +30,10 @@ public class ShowPercurredDistanceUI : MonoBehaviour
     {       
         if (playerDistanceComponent != null) 
         {
-            if (FlowManager.GetGameState() == GameState.InGame) 
+            if (FlowManager.GetGameState() == GameState.InGame || FlowManager.GetGameState() == GameState.GameOver) 
             {
-                approxDist = Mathf.Round( factorRound*(playerDistanceComponent.neutrinoPercurredDistance) )/ factorRound;
+                //approxDist = Mathf.Round( factorRound*(playerDistanceComponent.neutrinoPercurredDistance) )/ factorRound;
+                approxDist = playerDistanceComponent.neutrinoPercurredDistance;
                 string distToStiring = approxDist.ToString();
 
                 if(distToStiring.Length>4)
@@ -40,6 +41,10 @@ public class ShowPercurredDistanceUI : MonoBehaviour
                     string exp = distToStiring.Substring(distToStiring.Length - 4);
                     string firstPart = distToStiring.Substring(0,4);
                     scoreText.text = extraTextBefore + firstPart + exp + extraTextAfter;
+                } 
+                else 
+                {
+                    scoreText.text = extraTextBefore + distToStiring + extraTextAfter;
                 }
             }
         }

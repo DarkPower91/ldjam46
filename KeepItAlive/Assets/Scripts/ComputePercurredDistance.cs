@@ -30,17 +30,25 @@ public class ComputePercurredDistance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime =  Time.time - startTime;      
-        /*
-            Il neutrino va circa alla velocità della luce; 
-            dunque, in anni luce, percorre 
-            currentTime (yrs)
-            Fine. 
-            Dunque, succome CurrentTime è in secondi, basta convertirlo in anni.
-            1 sec = 1/60/60/24/365 yrs
-            per cui
-            1 yrs  = 1 * 60*60*24*365 sec
-        */
-        neutrinoPercurredDistance = currentTime*60*60*24*365; 
+        if (FlowManager.GetGameState() == GameState.InGame) 
+        {
+            currentTime =  Time.time - startTime;      
+            /*
+                Il neutrino va circa alla velocità della luce; 
+                dunque, in anni luce, percorre 
+                currentTime (yrs)
+                Fine. 
+                Dunque, succome CurrentTime è in secondi, basta convertirlo in anni.
+                1 sec = 1/60/60/24/365 yrs
+                per cui
+                1 yrs  = 1 * 60*60*24*365 sec
+                In unità astronomiche invece
+                1 light-yrss = 63 241.08 AU
+                In chilometri invece
+
+            */
+            neutrinoPercurredDistance =  (63241.08f)*(0.995f)*currentTime/(60*60*24*365.25f); 
+        }
+        
     }
 }
