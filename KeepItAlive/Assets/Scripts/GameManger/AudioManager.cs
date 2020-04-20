@@ -6,11 +6,14 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip m_MainMenuSound = null;
-    public AudioClip m_InGameSound = null;
+    public AudioClip m_InGameSoundIntro = null;
+    public AudioClip m_InGameSoundLoop = null;
     public AudioClip m_InCreditsEasterEgg = null;
 
     private AudioSource m_BackgroundMusicSource =  null;
     private GameState m_PreviousGameState = GameState.MainMenu;
+
+    private float m_IntroLenght = 0.0f;
 
     void Start()
     {
@@ -18,8 +21,21 @@ public class AudioManager : MonoBehaviour
         
         m_BackgroundMusicSource.clip = m_MainMenuSound;
         m_BackgroundMusicSource.Play();
+        m_IntroLenght = m_InGameSoundIntro.length;
 
         FlowManager.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    void Update()
+    {
+        if(m_PreviousGameState == GameState.InGame)
+        {
+            if(!m_BackgroundMusicSource.isPlaying)
+            {
+                m_BackgroundMusicSource.clip = m_InGameSoundLoop;
+                m_BackgroundMusicSource.loop = true;
+            }
+        }
     }
 
     void OnDestroy() 
@@ -29,7 +45,7 @@ public class AudioManager : MonoBehaviour
 
     void OnGameStateChanged(GameState newState)
     {
-        if(newState != m_PreviousGameState)
+        if(newState != m_PreviousGameState && newState != GameState.GameOver)
         {
             m_BackgroundMusicSource.Stop();
             switch(newState)
@@ -37,16 +53,19 @@ public class AudioManager : MonoBehaviour
                 case GameState.MainMenu:
                 {
                     m_BackgroundMusicSource.clip = m_MainMenuSound;
+                    m_BackgroundMusicSource.loop = true;
                     break;
                 }
                 case GameState.InGame:
                 {
-                    m_BackgroundMusicSource.clip = m_InGameSound;
+                    m_BackgroundMusicSource.clip = m_InGameSoundIntro;
+                    m_BackgroundMusicSource.loop = false;
                     break;
                 }
                 case GameState.InCredits:
                 {
                     m_BackgroundMusicSource.clip = m_InCreditsEasterEgg;
+                    m_BackgroundMusicSource.loop = true;
                     break;
                 }
             }
