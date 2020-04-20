@@ -5,6 +5,7 @@ using UnityEngine;
 public enum GameState
 {
     MainMenu,
+    InCredits,
     InGame,
     InPause,
     GameOver
@@ -34,6 +35,7 @@ public class FlowManager : MonoBehaviour
             case GameState.MainMenu:
             case GameState.InGame:
             case GameState.GameOver:
+            case GameState.InCredits:
             {
                 Time.timeScale = 1;
                 break;

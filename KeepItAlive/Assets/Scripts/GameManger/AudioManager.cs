@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioClip m_MainMenuSound = null;
     public AudioClip m_InGameSound = null;
+    public AudioClip m_InCreditsEasterEgg = null;
 
     private AudioSource m_BackgroundMusicSource =  null;
     private GameState m_PreviousGameState = GameState.MainMenu;
@@ -41,6 +42,11 @@ public class AudioManager : MonoBehaviour
                 case GameState.InGame:
                 {
                     m_BackgroundMusicSource.clip = m_InGameSound;
+                    break;
+                }
+                case GameState.InCredits:
+                {
+                    m_BackgroundMusicSource.clip = m_InCreditsEasterEgg;
                     break;
                 }
             }
