@@ -954,7 +954,7 @@ PrefabInstance:
     - target: {fileID: 4833810187930018164, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
       propertyPath: extraTextAfter
-      value: AU
+      value: ' Astronomical Units'
       objectReference: {fileID: 0}
     - target: {fileID: 5211331543515533882, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}

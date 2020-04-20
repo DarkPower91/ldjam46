@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MainMenuSound: {fileID: 8300000, guid: 113175978fb6d4748b57101a28b5654f, type: 3}
-  m_InGameSoundIntro: {fileID: 8300000, guid: 6984cc2befb1345438b634091bbb8ee0, type: 3}
+  m_InGameSoundIntro: {fileID: 8300000, guid: 1bbf99fa21ca93b4781edb06d01f9e3b, type: 3}
   m_InGameSoundLoop: {fileID: 8300000, guid: c03039f7e602b4429874a3da806d12a6, type: 3}
   m_InCreditsEasterEgg: {fileID: 8300000, guid: 0602cb64be5014b5f8b50517fb74810e,
     type: 3}
