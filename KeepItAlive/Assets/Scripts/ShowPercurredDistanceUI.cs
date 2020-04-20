@@ -32,8 +32,9 @@ public class ShowPercurredDistanceUI : MonoBehaviour
         {
             if (FlowManager.GetGameState() == GameState.InGame) 
             {
-                approxDist = Mathf.Round( factorRound*(playerDistanceComponent.neutrinoPercurredDistance) )/ factorRound ;
-                scoreText.text = extraTextBefore +  approxDist.ToString() + extraTextAfter;
+                approxDist = Mathf.Round( factorRound*(playerDistanceComponent.neutrinoPercurredDistance) )/ factorRound;
+                string distToStiring = approxDist.ToString();
+                scoreText.text = extraTextBefore +  distToStiring.Substring(0,4) + distToStiring.Substring(distToStiring.Length - 4, 4) + extraTextAfter;
             }
         }
         
