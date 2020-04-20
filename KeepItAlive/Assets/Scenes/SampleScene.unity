@@ -666,6 +666,90 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &274336728
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909784, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909858, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: m_Name
+      value: Sun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818392903931909861, guid: 61042a0bcc93549e78ce142b66c737e9,
+        type: 3}
+      propertyPath: customScaleWidth
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 61042a0bcc93549e78ce142b66c737e9, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,7 +1645,19 @@ PrefabInstance:
     - target: {fileID: 2349124505704777507, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
       propertyPath: m_text
-      value: "You became a \nMiss. W Boson"
+      value: "Gino Became a \nMiss. W Boson"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349124505924280670, guid: ddcbdf1c61c8f470cb8f88f63987e717,
+        type: 3}
+      propertyPath: m_text
+      value: 'Gino Became a
+
+        Kid W Boson'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349124506600316269, guid: ddcbdf1c61c8f470cb8f88f63987e717,
+        type: 3}
+      propertyPath: m_text
+      value: "Gino Became a \nSir. W. Boson"
       objectReference: {fileID: 0}
     - target: {fileID: 2349124506805706598, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}

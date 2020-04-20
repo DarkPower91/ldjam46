@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class QuadScaler : MonoBehaviour
 {
+    public float customScaleWidth = 1.0f;
+    public float customScaleHeight = 1.0f;
     public bool scaleWidth = false;
     public bool scaleHeight = false;
 
@@ -17,11 +19,11 @@ public class QuadScaler : MonoBehaviour
 
         if(scaleWidth)
         {
-            newScale[0] = (float)width;
+            newScale[0] = (float)width * customScaleWidth;
         }    
         if(scaleHeight)
         {
-            newScale[1] = (float)height;
+            newScale[1] = (float)height * customScaleHeight;
         }
 
         transform.localScale = newScale;

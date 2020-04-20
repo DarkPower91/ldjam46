@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customScaleWidth: 1
+  customScaleHeight: 1
   scaleWidth: 1
   scaleHeight: 1
 --- !u!1 &7421064427263063831
@@ -246,6 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customScaleWidth: 1
+  customScaleHeight: 1
   scaleWidth: 1
   scaleHeight: 1
 --- !u!1 &7421064427500200997
@@ -370,6 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customScaleWidth: 1
+  customScaleHeight: 1
   scaleWidth: 1
   scaleHeight: 0
 --- !u!1 &7421064427572890032
@@ -494,6 +500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customScaleWidth: 1
+  customScaleHeight: 1
   scaleWidth: 1
   scaleHeight: 1
 --- !u!1 &7421064427939292153
@@ -618,6 +626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customScaleWidth: 1
+  customScaleHeight: 1
   scaleWidth: 1
   scaleHeight: 1
 --- !u!1 &7421064428173914144
@@ -742,6 +752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c46d9e4db0e44ea0a40ff75957f93c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customScaleWidth: 1
+  customScaleHeight: 1
   scaleWidth: 1
   scaleHeight: 1
 --- !u!1 &7421064428406789800
