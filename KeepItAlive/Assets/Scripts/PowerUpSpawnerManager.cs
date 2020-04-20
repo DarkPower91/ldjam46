@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OtherThingSpawnerManager : MonoBehaviour
-{   
-    public float m_SpawnDelay = 7.5f;
-
+public class PowerUpSpawnerManager : MonoBehaviour
+{
+    public float m_SpawnDelay = 25.0f;
+    
     #region Private 
     [SerializeField]
     private List<GameObject> m_OtherDB = new List<GameObject>();
     public float minSpeed = 0.5f;
-    public float maxSpeed = 3.0f;
+    public float maxSpeed = 8.0f;
 
     #endregion
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +26,6 @@ public class OtherThingSpawnerManager : MonoBehaviour
         
     }
 
-
     // Functions
         IEnumerator SpawnWave()
     {
@@ -36,25 +34,25 @@ public class OtherThingSpawnerManager : MonoBehaviour
             yield return new WaitForSeconds(m_SpawnDelay);
             if(FlowManager.GetGameState() == GameState.InGame)
            {
-               SpawnOther(); 
+               SpawnPowerUp(); 
            }
         }
     }
 
-    void SpawnOther() 
+    void SpawnPowerUp() 
     {
-        int otherIndex = Random.Range(0, m_OtherDB.Count);
-        GameObject other = Instantiate(m_OtherDB[otherIndex]) as GameObject;
+        int powerUpIndex = Random.Range(0, m_OtherDB.Count);
+        GameObject powerUp = Instantiate(m_OtherDB[powerUpIndex]) as GameObject;
 
-        float otherBBy = other.GetComponent<SpriteRenderer>().bounds.size.y;
+        float otherBBy = powerUp.GetComponent<SpriteRenderer>().bounds.size.y;
         Vector2 screenBounds = ScreenBounds.GetScreenBounds();
-        float yPosition = Random.Range(-3*screenBounds.y + otherBBy/2, 3*screenBounds.y - otherBBy/2);
+        float yPosition = Random.Range(-screenBounds.y + otherBBy/2, screenBounds.y - otherBBy/2);
 
         float speed = - Random.Range(minSpeed, maxSpeed);
  
-        other.transform.position = new Vector3(screenBounds.x * 1.5f, yPosition, 10.0f);
+        powerUp.transform.position = new Vector2(screenBounds.x * 1.5f, yPosition);
 
-        other.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0.0f);
+        powerUp.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0.0f);
 
     }
 }

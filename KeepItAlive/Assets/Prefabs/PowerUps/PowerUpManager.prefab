@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5835918772321554070}
-  - component: {fileID: 5835918772321554071}
+  - component: {fileID: 4134940158730760143}
   m_Layer: 0
-  m_Name: OtherManager 1
+  m_Name: PowerUpManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5835918772321554071
+--- !u!114 &4134940158730760143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,15 +40,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5835918772321554068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6baca7788b25d4d8a46b0174a43fd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 967b8aa6c566e8e41a05237b73490015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpawnDelay: 7.5
+  m_SpawnDelay: 15
   m_OtherDB:
-  - {fileID: 2071601013606574819, guid: 93f9084d50a90e14687a7fff569f1dd2, type: 3}
-  - {fileID: 2071601013606574819, guid: 284788dddc6716f42a140c494d716dcb, type: 3}
-  - {fileID: 2071601013606574819, guid: 98dc41c43658e604ba33d1d406a7a15d, type: 3}
-  - {fileID: 2071601013606574819, guid: 12e39be4c618d93459d168a6345f606c, type: 3}
-  - {fileID: 2071601013606574819, guid: 0a6e2e5e0ec8c4a438c82f04fda88ec1, type: 3}
+  - {fileID: 2071601013606574819, guid: 420d76f570d687642ad31ac82045c3c5, type: 3}
+  - {fileID: 2071601013606574819, guid: f0e10e4b9d4c24a418f4e2c0cd8f5ff6, type: 3}
+  - {fileID: 2071601013606574819, guid: 683c4d974a61287448d2c7f8c32b372d, type: 3}
   minSpeed: 0.5
-  maxSpeed: 3
+  maxSpeed: 8
