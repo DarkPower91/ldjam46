@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7037348427361318039}
   - component: {fileID: 3004789435527524751}
   - component: {fileID: 6281266811879439879}
+  - component: {fileID: -5280861250026520523}
   m_Layer: 0
   m_Name: penemy1
   m_TagString: Untagged
@@ -195,3 +196,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flavour: 2
+--- !u!114 &-5280861250026520523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746232068772996590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75685113e475247cf84b5e4ffd2b1f41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ChangeTime: 0.2
+  m_TopSpeed: 5
