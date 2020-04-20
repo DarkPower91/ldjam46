@@ -34,7 +34,13 @@ public class ShowPercurredDistanceUI : MonoBehaviour
             {
                 approxDist = Mathf.Round( factorRound*(playerDistanceComponent.neutrinoPercurredDistance) )/ factorRound;
                 string distToStiring = approxDist.ToString();
-                scoreText.text = extraTextBefore +  distToStiring.Substring(0,4) + distToStiring.Substring(distToStiring.Length - 4, 4) + extraTextAfter;
+
+                if(distToStiring.Length>4)
+                {
+                    string exp = distToStiring.Substring(distToStiring.Length - 4);
+                    string firstPart = distToStiring.Substring(0,4);
+                    scoreText.text = extraTextBefore + firstPart + exp + extraTextAfter;
+                }
             }
         }
         
