@@ -148,6 +148,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1011401924801507518, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 269287225}
+    - target: {fileID: 1011401924801507518, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateGameOver
+      objectReference: {fileID: 0}
     - target: {fileID: 1387966083212046051, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -398,6 +408,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896808079479189078, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 269287225}
+    - target: {fileID: 3896808079479189078, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateGameOver
+      objectReference: {fileID: 0}
     - target: {fileID: 4438050842310463289, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -422,6 +442,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609653164938590667, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 269287225}
+    - target: {fileID: 5609653164938590667, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632732639669948612, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 269287225}
+    - target: {fileID: 5632732639669948612, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateGameOver
       objectReference: {fileID: 0}
     - target: {fileID: 5830065634481768753, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
         type: 3}
@@ -457,6 +497,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095209316507525473, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 269287225}
+    - target: {fileID: 6095209316507525473, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateGameOver
       objectReference: {fileID: 0}
     - target: {fileID: 6356134965576071232, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
         type: 3}
@@ -517,6 +567,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686108964502922517, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 269287225}
+    - target: {fileID: 8686108964502922517, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateGameOver
       objectReference: {fileID: 0}
     - target: {fileID: 8945704649787873325, guid: c351cfa1ddc2b4bc8b9281de540c2da2,
         type: 3}
