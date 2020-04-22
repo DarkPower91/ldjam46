@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public delegate void FlavourChanged(Flavours newFlavour);
+
+
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -12,6 +15,8 @@ public class OscillatingFlavour : MonoBehaviour
     public Flavours CurrentFlavour = Flavours.electronic;
     public FlavourDefinition m_GameOverFlavorMessage = null;
     public GameObject ExplosionAnimation = null;
+    public event FlavourChanged OnFlavourChanged = null;
+
     #endregion
 
     #region Private fields
@@ -54,6 +59,12 @@ public class OscillatingFlavour : MonoBehaviour
             {
                 CurrentFlavour = m_NextFlavour;
                 animator.SetInteger( "flavour", (int) CurrentFlavour );
+
+                if (OnFlavourChanged != null)
+                {
+                    OnFlavourChanged(CurrentFlavour);
+                }
+
                 yield return new WaitForSeconds(changeTime); 
             }
             else
