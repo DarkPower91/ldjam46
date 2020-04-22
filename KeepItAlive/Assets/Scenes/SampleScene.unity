@@ -1033,6 +1033,11 @@ PrefabInstance:
       propertyPath: playerDistanceComponent
       value: 
       objectReference: {fileID: 905827861}
+    - target: {fileID: 2448465251185674469, guid: dc71c2feb0b01f64180c551d3fc8f6cd,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2448465251185674470, guid: dc71c2feb0b01f64180c551d3fc8f6cd,
         type: 3}
       propertyPath: m_Name
@@ -1816,6 +1821,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 905827861, guid: 14a75b710945c7b4992c5212e14e695c, type: 3}
+      propertyPath: JamModifier
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3938519595107000738, guid: 14a75b710945c7b4992c5212e14e695c,
         type: 3}
       propertyPath: m_Name
