@@ -10,7 +10,7 @@ public class ShowPercurredDistanceUI : MonoBehaviour
     public float neutrinoPercurredDistance = 0.0f;
     public ComputePercurredDistance playerDistanceComponent = null;
     public string extraTextBefore= "";
-    public string extraTextAfter = "";
+    public string extraTextAfter = ""; 
     #endregion
 
     #region Private fields
