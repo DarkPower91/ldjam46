@@ -6,6 +6,7 @@ public class ComputePercurredDistance : MonoBehaviour
 {
     #region Public fields
     public float neutrinoPercurredDistance = 0.0f;
+    public float JamModifier = 3.0f;
     #endregion
 
     #region Private fields
@@ -47,7 +48,7 @@ public class ComputePercurredDistance : MonoBehaviour
                 In chilometri invece
 
             */
-            neutrinoPercurredDistance = powerUpExtra + (63241.08f)*(0.995f)*currentTime/(60*60*24*365.25f); 
+            neutrinoPercurredDistance = powerUpExtra + JamModifier * (63241.08f)*(0.995f)*currentTime/(60*60*24*365.25f); 
         }
         
     }
