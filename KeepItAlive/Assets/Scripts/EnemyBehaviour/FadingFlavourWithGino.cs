@@ -8,14 +8,14 @@ public class FadingFlavourWithGino : MonoBehaviour
     
     private OscillatingFlavour playerFlavour = null;
     private Flavours penemyFlavour =  Flavours.count;
-    private SpriteRenderer renderer = null;
+    private SpriteRenderer penemyRenderer = null;
     
 
     // Start is called before the first frame update
     void Start()
     {
         playerFlavour = GameObject.FindGameObjectWithTag("Player").GetComponent<OscillatingFlavour>();
-        renderer = GetComponent<SpriteRenderer>();
+        penemyRenderer = GetComponent<SpriteRenderer>();
 
         if(playerFlavour != null) 
         {
@@ -42,9 +42,9 @@ public class FadingFlavourWithGino : MonoBehaviour
     // Functions
     private void ShadingPenemy(Flavours flavour) 
     {
-        var newColor = renderer.material.color;
+        var newColor = penemyRenderer.material.color;
         newColor.a = (penemyFlavour == flavour) ? 1.0f : fadingFactor;
 
-        renderer.material.color = newColor;
+        penemyRenderer.material.color = newColor;
     }
 }
