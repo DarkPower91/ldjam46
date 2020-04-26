@@ -12,12 +12,14 @@ public class GameOverCanvasManager : MonoBehaviour
             go.SetActive(false);
         }
         FlowManager.OnGameStateChanged += OnGameStateChanged;
+        SaveEvents.DataUpdateNeeded += UpdateFtue;
 
     }
 
     private void OnDestroy() 
     {
         FlowManager.OnGameStateChanged -= OnGameStateChanged;   
+        SaveEvents.DataUpdateNeeded -= UpdateFtue;
     }
 
     private void OnGameStateChanged(GameState newState)
@@ -29,5 +31,10 @@ public class GameOverCanvasManager : MonoBehaviour
                 go.SetActive(true);
             }
         }
+    }
+
+    void UpdateFtue()
+    {
+        SaveData.ftue = false; 
     }
 }
