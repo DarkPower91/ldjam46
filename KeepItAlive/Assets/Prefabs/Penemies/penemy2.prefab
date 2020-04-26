@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 2210529648236725621}
   - component: {fileID: 523131661991657458}
   - component: {fileID: 2647851804760834915}
+  - component: {fileID: -8902431809444302710}
   m_Layer: 0
   m_Name: penemy2
   m_TagString: Penemy
@@ -240,3 +241,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadingFactor: 0.5
+--- !u!114 &-8902431809444302710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173419114285362148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29117f0fa28ab476e8a3a3d28779d9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UnlockableType: 1

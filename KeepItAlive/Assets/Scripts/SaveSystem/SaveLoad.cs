@@ -41,7 +41,7 @@ public class SaveLoad
     public static void ClearAllSaves()
     {
         DirectoryInfo saveDirectory = new DirectoryInfo(persistentSavePath);
-        saveDirectory.Delete();
+        saveDirectory.Delete(true);
         Directory.CreateDirectory(persistentSavePath);
     }
 }
