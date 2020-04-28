@@ -1033,6 +1033,11 @@ PrefabInstance:
       propertyPath: playerDistanceComponent
       value: 
       objectReference: {fileID: 905827861}
+    - target: {fileID: 2448465251185674467, guid: dc71c2feb0b01f64180c551d3fc8f6cd,
+        type: 3}
+      propertyPath: extraTextBefore
+      value: 'Gino reached '
+      objectReference: {fileID: 0}
     - target: {fileID: 2448465251185674469, guid: dc71c2feb0b01f64180c551d3fc8f6cd,
         type: 3}
       propertyPath: m_Text
