@@ -42,6 +42,10 @@ public class SaveLoad
     {
         DirectoryInfo saveDirectory = new DirectoryInfo(persistentSavePath);
         saveDirectory.Delete(true);
+        #if UNITY_EDITOR
+        ;
+        #else
         Directory.CreateDirectory(persistentSavePath);
+        #endif
     }
 }

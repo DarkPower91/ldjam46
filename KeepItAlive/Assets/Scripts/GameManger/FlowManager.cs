@@ -63,4 +63,12 @@ public class FlowManager : MonoBehaviour
         
         OnGameStateChanged?.Invoke(m_CurrentState);
     }
+
+    #if UNITY_EDITOR
+    void OnDestroy()
+    {
+        SaveLoad.ClearAllSaves();
+    }
+    #endif
+
 }
