@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum GameState
 {
@@ -11,15 +12,18 @@ public enum GameState
     GameOver
 }
 
-public delegate void GameStateChanged(GameState newState);
-
 public class FlowManager : MonoBehaviour
 {
     #region Private fields
     private static GameState m_CurrentState = GameState.MainMenu;
     #endregion
 
-    public static event GameStateChanged OnGameStateChanged = null;
+    public static Action<GameState> OnGameStateChanged = null;
+
+    void Start()
+    {
+        SetFlowState(GameState.MainMenu);
+    }
 
     public static GameState GetGameState()
     {
@@ -32,12 +36,22 @@ public class FlowManager : MonoBehaviour
         
         switch(m_CurrentState)
         {
-            case GameState.MainMenu:
             case GameState.InGame:
-            case GameState.GameOver:
             case GameState.InCredits:
             {
                 Time.timeScale = 1;
+                break;
+            }
+            case GameState.MainMenu:
+            {
+                Time.timeScale = 1;
+                SaveEvents.OnLoadInitiated();
+                break;
+            }
+            case GameState.GameOver:
+            {
+                Time.timeScale = 1;
+                SaveEvents.OnSaveInitiated();
                 break;
             }
             case GameState.InPause:
@@ -47,9 +61,6 @@ public class FlowManager : MonoBehaviour
             }
         }
         
-        if(OnGameStateChanged != null)
-        {
-            OnGameStateChanged(m_CurrentState);
-        }
+        OnGameStateChanged?.Invoke(m_CurrentState);
     }
 }

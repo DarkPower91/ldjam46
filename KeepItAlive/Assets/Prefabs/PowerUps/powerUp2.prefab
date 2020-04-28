@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4013087754419829455}
   - component: {fileID: 2446821071141821807}
   - component: {fileID: -6292016612906848201}
+  - component: {fileID: 2691460392914865492}
   m_Layer: 0
   m_Name: powerUp2
   m_TagString: Untagged
@@ -146,3 +147,16 @@ MonoBehaviour:
   isDuck: 1
   extraDistance: 0
   clearScreen: 0
+--- !u!114 &2691460392914865492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071601013606574819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29117f0fa28ab476e8a3a3d28779d9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UnlockableType: 9

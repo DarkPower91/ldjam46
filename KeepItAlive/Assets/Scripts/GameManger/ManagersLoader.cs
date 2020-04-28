@@ -6,6 +6,8 @@ public class ManagersLoader : MonoBehaviour
 {
     #region Serialized fields
     [SerializeField]
+    private  GameObject m_SaveDatarepository = null;
+    [SerializeField]
     private  GameObject m_FlowManager = null;
     [SerializeField]
     private GameObject m_MusicManager = null;
@@ -14,6 +16,12 @@ public class ManagersLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(!GameObject.FindGameObjectWithTag("SaveData"))
+        {
+            GameObject saveData = Instantiate(m_SaveDatarepository, transform.position, Quaternion.identity) as GameObject;
+            DontDestroyOnLoad(saveData);
+        }
+
         if(!GameObject.FindGameObjectWithTag("MusicManager"))
         {
             GameObject musicManager = Instantiate(m_MusicManager, transform.position, Quaternion.identity) as GameObject;

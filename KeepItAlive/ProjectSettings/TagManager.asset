@@ -8,6 +8,7 @@ TagManager:
   - MusicManager
   - Penemy
   - MuteManager
+  - SaveData
   layers:
   - Default
   - TransparentFX
