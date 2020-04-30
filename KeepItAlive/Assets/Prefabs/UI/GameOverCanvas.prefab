@@ -102,7 +102,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e0a975b34c7eb4c748b3c0b6efff60bd, type: 3}
+    m_Font: {fileID: 12800000, guid: 75fcd4fb542e8470d8aa157c315087b3, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 2349124504964091774}
   - component: {fileID: 2349124504964091773}
   m_Layer: 5
-  m_Name: Tauonic
+  m_Name: Muonic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You became a \nMiss. W Boson"
+  m_text: "Gino Became a \nMiss. W Boson"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 183cb7782b1bb455d897c6b145b90ca3, type: 2}
   m_sharedMaterial: {fileID: -7350059838764586968, guid: 183cb7782b1bb455d897c6b145b90ca3,
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 2349124505752945826}
   - component: {fileID: 5369426364042384052}
   m_Layer: 5
-  m_Name: Tau
+  m_Name: Mu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29117f0fa28ab476e8a3a3d28779d9e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UnlockableType: 5
+  m_UnlockableType: 4
 --- !u!1 &2349124505782546066
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 2349124505924280671}
   - component: {fileID: 2349124505924280670}
   m_Layer: 5
-  m_Name: MuGameOverText
+  m_Name: TauGameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You Became a
+  m_text: 'Gino Became a
 
     Kid W Boson'
   m_isRightToLeft: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 2349124506600316270}
   - component: {fileID: 2349124506600316269}
   m_Layer: 5
-  m_Name: TauGameOverText
+  m_Name: MuGameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You Became a \nSir. W. Boson"
+  m_text: "Gino Became a \nSir. W. Boson"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 183cb7782b1bb455d897c6b145b90ca3, type: 2}
   m_sharedMaterial: {fileID: -7350059838764586968, guid: 183cb7782b1bb455d897c6b145b90ca3,
@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 2349124506645231342}
   - component: {fileID: 2349124506645231341}
   m_Layer: 5
-  m_Name: Muonic
+  m_Name: Tauonic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,7 +1052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2349124506805706599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 2349124506908933123}
   - component: {fileID: 4941397432791780049}
   m_Layer: 5
-  m_Name: Mu
+  m_Name: Tau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29117f0fa28ab476e8a3a3d28779d9e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UnlockableType: 4
+  m_UnlockableType: 5
 --- !u!1 &3118502121737484166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1221,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ffa448195a0e54cb395b554a16a72e2d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c6d3eeac85f534cb7b4f08db3503fda3, type: 2}
   m_sharedMaterial: {fileID: 8334710314773048885, guid: ffa448195a0e54cb395b554a16a72e2d,
     type: 2}
   m_fontSharedMaterials: []
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1450,7 +1450,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: ParticleDex
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ffa448195a0e54cb395b554a16a72e2d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c6d3eeac85f534cb7b4f08db3503fda3, type: 2}
   m_sharedMaterial: {fileID: 8334710314773048885, guid: ffa448195a0e54cb395b554a16a72e2d,
     type: 2}
   m_fontSharedMaterials: []
@@ -1529,7 +1529,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -1606,7 +1606,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e0a975b34c7eb4c748b3c0b6efff60bd, type: 3}
+    m_Font: {fileID: 12800000, guid: 75fcd4fb542e8470d8aa157c315087b3, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -1634,7 +1634,7 @@ MonoBehaviour:
   neutrinoPercurredDistance: 0
   playerDistanceComponent: {fileID: 0}
   extraTextBefore: 
-  extraTextAfter: 
+  extraTextAfter: ' Astronomical Units'
 --- !u!1 &6601357706232820153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,7 +1752,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1633071209193311409}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ActivateDex
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6876361616275680869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1960,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ffa448195a0e54cb395b554a16a72e2d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c6d3eeac85f534cb7b4f08db3503fda3, type: 2}
   m_sharedMaterial: {fileID: 8334710314773048885, guid: ffa448195a0e54cb395b554a16a72e2d,
     type: 2}
   m_fontSharedMaterials: []
@@ -2028,7 +2039,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_subTextObjects:
   - {fileID: 0}
   - {fileID: 0}

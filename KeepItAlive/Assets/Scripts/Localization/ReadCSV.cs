@@ -6,7 +6,7 @@ using UnityEngine;
 public static class ReadCSV 
 {
     private static string csvPath =  "Languages/";
-    private static string csvFileName = "NaziLocalization";
+    private static string csvFileName = "Languages";
     private static Dictionary<string, string> dictEng = new Dictionary<string, string>();
     private static Dictionary<string, string> dictIta =  new Dictionary<string, string>();
     private static bool isInitalized = false;

@@ -1,0 +1,72 @@
+key;en;it
+!Gino_Description;Subatomic particle with no charge, it has the peculiarity of oscillating, that is to change its properties slightly, remaining itself even so: it can take on different shades, called “flavors”. These are only three: muonic, tauonic and electronic. While the other particles usually interact often and willingly with each other, the neutrino, being by its nature a real introvert, needs to find those that share its own flavor: these particles are the Electron, the Muon and the Tauon. When the Neutrino approaches one of these particles, and in that moment shares the same flavor, it interacts with it joyfully, forming a completely new particle: the W Boson. Our Gino, however, would like to challenge itself and explore the universe alone for a while longer.;Particella subatomica a carica nulla, ha la particolarità di oscillare, ossia di cambiare leggermente proprietà restando comunque se stessa: può assumere diverse sfumature, chiamate sapori. Questi sono solo tre: muonico, tauonico ed elettronico. Mentre le altre particelle normalmente interagiscono spesso e volentieri fra di loro, il neutrino, essendo per sua natura molto introverso, per poterlo fare ha bisogno di trovare quelle che condividono il suo stesso sapore: queste particelle sono l’Elettrone, il Muone ed il Tauone. Quando il Neutrino si avvicina ad una di queste particelle, e ne condivide in quel momento il sapore, interagisce con gioia con questa, formando una particella completamente nuova: il Bosone W. Il nostro Gino tuttavia vuole mettersi alla prova ed esplorare l’universo da solo per un po’ prima di trasformarsi in una nuova particella. 
+!Electron_Description;Subatomic particle with negative charge, extremely sociable and active, in such a way to be perceived as annoying: as a matter of fact, it is found everywhere and always hangs in the affairs of others. It is the first particle to be observed by humans, and for this reason it has been studied a lot: despite its notoriety, it did not fool itself too much.;Particella subatomica dotata di carica elettrica negativa, estremamente socievole e attiva, tanto da risultare un po’ fastidiosa: infatti si trova dappertutto e si impiccia sempre negli affari degli altri. È stata la prima particella ad essere stata osservata dall’uomo, e per questo è stata molto studiata: nonostante la sua notorietà, non si è montata-troppo-la testa. 
+!Muon_Description;Subatomic particle with negative charge, it has been traveling for a long time all around the universe. It is convinced that he knows all the mysteries of it, or rather, knows better than others (but that is not actually true). However he is a distinct and very pleasant particle to talk with, even if it turns out to be a bit long-winded.;Particella subatomica dotata come l’elettrone di carica negativa, ha viaggiato per molto tempo in lungo e in largo per l’universo, è quindi convinta di conoscerne tutti i misteri, o meglio, di conoscerli meglio rispetto agli altri (anche se non è vero). Rimane comunque una particella distinta e molto piacevole con cui parlare, anche se risulta essere un po’ logorroica.
+!Tauon_Description;It is the largest subatomic particle of the whole trio. It often relates with others boldly, but deep inside it has a very sweet personality. Like the other two, it has a negative charge.;È la particella subatomica di dimensioni più grandi di tutto il trio. Spesso si interfaccia con gli altri in maniera un po’ spavalda, anche se in realtà è una tenerona. Come le altre, è dotata di carica negativa. 
+!W_Boson_Description;When our neutrino meets and collides with other particles, a brand new one is created: the W Boston Our new friend will continue the journey undertaken by Gino, but in a completely different form. ;Quando il nostro neutrino incontra e si scontra con le altre particelle si viene a creare una nuova particella: il Bosone W. La nostra nuova amica continuerà il viaggio intrapreso da Gino, sotto una nuova forma completamente diversa. 
+!Quacky_Description;A duck wandering through the universe. When it meets Gino the Neutrino, all the other particles disappear. Which superpowers does it hide? And why is Gino not influenced by them? Who knows. ;Una paperella che passeggia per l’universo. Quando incontra Gino il Neutrino, tutte le altre particelle presenti scompaiono. Quali superpoteri nasconde? E perchè Gino non ne è influenzato? Chissà.
+!Kittens_Description;Kittens in space suits, traveling happily across the universe. Are they going back home? Have they just left for a tour? Are they going to work? We will never know. And maybe neither will they. When they meet Gino the Neutrino, they will gladly share with him their knowledge of the universe and so they grants him precious astronomical units. ;Gattini in tuta spaziale che viaggiano felici per l’universo. Stanno tornando a casa? sono appena partiti per un tour? Stanno andando a lavoro? Non lo sapremo mai, e forse nemmeno loro. Quando incontrano Gino il neutrino, sono così felici da condividere con lui la loro conoscenza dell’universo e gli donano delle preziose miglia spaziali. 
+!Sun_Description;;
+!Mercury_Description;;
+!Venus_Description;;
+!Earth_Description;;
+!Mars_Description;;
+!Jupiter_Description;;
+!Saturn_Description;;
+!Uranus_Description;;
+!Neptune_Description;;
+!Pluto_Description;;
+!Asteroid_Description;;
+!Title;Gino the Neutrino;Gino il Neutrino
+!Play;Play;Inizia
+!Particledex;Particledex;Particledex
+!Credits;Credits;Credits
+!Quit;Quit;Esci
+!Distance;Distance;Distanza
+!End_gameE;Gino became Miss W. Boson;Gino è diventata Miss W. Boson
+!End_gameM;Gino became Sir W. Boson;Gino è diventato Signor W. Bosone
+!End_gameT;Gino became Kid W. Boson;Gino è diventato Kid W. Bosone
+!Score;You reached X Astronomical Units;Hai raggiunto la distanza di X Unità Astronomiche
+!Retry;Retry;Riprova
+!Main_Menu;Main Menu;Menù Principale
+!EG_Particledex;Particledex;Particledex
+!Sailor_Mercury;Gino reached Mercury!;Gino ha raggiunto Mercurio!
+!Sailor_Venus;Gino reached Venus!;Gino ha raggiunto Venere!
+!Sailor_Earth;Gino reached Earth! Say hi to him!;Gino ha raggiunto la Terra! Salutalo!
+!Sailor_Mars;Gino reached Mars!;Gino ha raggiunto Marte!
+!Sailor_Jupiter;Gino reached Jupiter!;Gino ha raggiunto Giove!
+!Sailor_Saturn;Gino reached Saturn!;Gino ha raggiunto Saturno!
+!Sailor_Uranus;Gino reached Uranus!;Gino ha raggiunto Urano!
+!Sailor_Neptune;Gino reached Neptune!;Gino ha raggiunto Nettuno!
+!Sailor_Pluto;Gino reached Pluto!;Gino ha raggiunto Plutone!
+!Programming_1;Alessio Bendoni – Programming;Alessio Bendoni – Programming
+!Programming_2;Alessandro Bombini – Programming;Alessandro Bombini – Programming
+!Game_design;Francesca Nesi – Game Design;Francesca Nesi – Game Design
+!Sound;Francesca Baldini – Sound Design;Francesca Baldini – Sound Design
+!Narrative;Gilberto Gavazzi – Narrative Design;Gilberto Gavazzi – Narrative Design
+!Artist;Serena Barone – 2D Artist;Serena Barone – 2D Artist
+!Ringraziamenti;Thanks a lot for playing;Grazie mille per aver giocato
+!Gino_Name;Gino the Neutrino;Gino il Neutrino
+!Electron_Name;Electron;Elettrone
+!Muon_Name;Muon;Muone
+!Tauon_Name;Tauon;Tauon
+!W_Boson_Name;W Boson Gang;Gang dei Bosoni W
+!Quacky_Name;Quacky the Ducky;Squeckerella la Paperella
+!Kittens_Name;Space Kittens;Gattini Spaziali
+!Sun_Name;Sun;Sole
+!Mercury_Name;Mercury;Mercurio
+!Venus_Name;Venus;Venus
+!Earth_Name;Earth;Terra
+!Mars_Name;Mars;Marte
+!Jupiter_Name;Jupiter;Giove
+!Saturn_Name;Saturn;Saturno
+!Uranus_Name;Uranus;Urano
+!Neptun_Name;Neptun;Nettuno
+!Pluto_Name;Pluto;Plutone
+!Asteroid_Name;Asteroid;Asteroide
+!Comet_Name;Comet;
+!Comet_Description;;
+!Previous;Previous;Precedente
+!Next;Next;Prossimo
+!UnknownParticle_Name;Unknown Particle;Particella Sconosciuta
+!UnknownParticle_Desc;You have not discovered this particle yet;Non hai ancora scoperto questa particella

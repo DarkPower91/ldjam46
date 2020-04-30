@@ -981,7 +981,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e0a975b34c7eb4c748b3c0b6efff60bd, type: 3}
+    m_Font: {fileID: 12800000, guid: 75fcd4fb542e8470d8aa157c315087b3, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -1560,66 +1560,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 608159135730772032, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353051084739114956, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353051084739114956, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353051084739114956, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353051084739114956, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1633071209193311409, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9969214699bd54256b04b784a22caaa7,
-        type: 3}
-    - target: {fileID: 1633071209193311409, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124504964091771, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Name
-      value: Muonic
-      objectReference: {fileID: 0}
     - target: {fileID: 2349124505349359751, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505349359769, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505349359769, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1600
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505349359769, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 2349124505349359771, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
@@ -1726,216 +1670,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2349124505704777507, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_text
-      value: "Gino Became a \nMiss. W Boson"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505752945825, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Name
-      value: Mu
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505752945825, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505924280668, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Name
-      value: TauGameOverText
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124505924280670, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_text
-      value: 'Gino Became a
-
-        Kid W Boson'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124506600316267, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Name
-      value: MuGameOverText
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124506600316269, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_text
-      value: "Gino Became a \nSir. W. Boson"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124506645231339, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Name
-      value: Tauonic
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124506805706598, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124506908933122, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2349124506908933122, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Name
-      value: Tau
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433812792646377646, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433812792646377646, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433812792646377646, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2433812792646377646, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3301757412723637959, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: ffa448195a0e54cb395b554a16a72e2d,
-        type: 2}
-    - target: {fileID: 3301757412723637959, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 8334710314773048885, guid: ffa448195a0e54cb395b554a16a72e2d,
-        type: 2}
-    - target: {fileID: 3959479500247514390, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519831097892930968, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: ffa448195a0e54cb395b554a16a72e2d,
-        type: 2}
-    - target: {fileID: 4519831097892930968, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 8334710314773048885, guid: ffa448195a0e54cb395b554a16a72e2d,
-        type: 2}
-    - target: {fileID: 4736727536504278096, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9969214699bd54256b04b784a22caaa7,
-        type: 3}
-    - target: {fileID: 4736727536504278096, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4833810187930018164, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
       propertyPath: playerDistanceComponent
       value: 
       objectReference: {fileID: 905827861}
-    - target: {fileID: 4833810187930018164, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: extraTextAfter
-      value: ' Astronomical Units'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4941397432791780049, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_UnlockableType
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211331543515533882, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211331543515533882, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211331543515533882, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211331543515533882, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5302240717626926347, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5302240717626926347, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5302240717626926347, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5302240717626926347, guid: ddcbdf1c61c8f470cb8f88f63987e717,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 269287225}
-    - target: {fileID: 5302240717626926347, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateDex
-      objectReference: {fileID: 0}
-    - target: {fileID: 5302240717626926347, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5369426364042384052, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_UnlockableType
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7542488731219113727, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: ffa448195a0e54cb395b554a16a72e2d,
-        type: 2}
-    - target: {fileID: 7542488731219113727, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 8334710314773048885, guid: ffa448195a0e54cb395b554a16a72e2d,
-        type: 2}
-    - target: {fileID: 8583776837864669238, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9969214699bd54256b04b784a22caaa7,
-        type: 3}
-    - target: {fileID: 8583776837864669238, guid: ddcbdf1c61c8f470cb8f88f63987e717,
-        type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddcbdf1c61c8f470cb8f88f63987e717, type: 3}
 --- !u!1001 &3938519595417699297
