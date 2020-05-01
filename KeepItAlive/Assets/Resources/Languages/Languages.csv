@@ -30,15 +30,17 @@ key;en;it
 !Retry;Retry;Riprova
 !Main_Menu;Main Menu;Menù Principale
 !EG_Particledex;Particledex;Particledex
-!Sailor_Mercury;Gino reached Mercury!;Gino ha raggiunto Mercurio!
-!Sailor_Venus;Gino reached Venus!;Gino ha raggiunto Venere!
-!Sailor_Earth;Gino reached Earth! Say hi to him!;Gino ha raggiunto la Terra! Salutalo!
-!Sailor_Mars;Gino reached Mars!;Gino ha raggiunto Marte!
-!Sailor_Jupiter;Gino reached Jupiter!;Gino ha raggiunto Giove!
-!Sailor_Saturn;Gino reached Saturn!;Gino ha raggiunto Saturno!
-!Sailor_Uranus;Gino reached Uranus!;Gino ha raggiunto Urano!
-!Sailor_Neptune;Gino reached Neptune!;Gino ha raggiunto Nettuno!
-!Sailor_Pluto;Gino reached Pluto!;Gino ha raggiunto Plutone!
+!Reached;Gino reached;Gino ha raggiunto
+!Sailor_Mercury;Mercury!;Mercurio!
+!Sailor_Venus;Venus!;Venere!
+!Sailor_Earth;Earth! Say hi to him!;la Terra! Salutalo!
+!Sailor_Mars;Mars!;Marte!
+!Sailor_Jupiter;Jupiter!;Giove!
+!Sailor_Saturn;Saturn!;Saturno!
+!Sailor_Uranus;Uranus!;Urano!
+!Sailor_Neptune;Neptune!;Nettuno!
+!Sailor_Pluto;Pluto!Actually, it's not a planet, but he's cute!;Plutone! In realtà non è un pianeta, però è carino!
+!Sailor_Outside;the outside border; il bordo esterno!
 !Programming_1;Alessio Bendoni – Programming;Alessio Bendoni – Programming
 !Programming_2;Alessandro Bombini – Programming;Alessandro Bombini – Programming
 !Game_design;Francesca Nesi – Game Design;Francesca Nesi – Game Design
@@ -55,7 +57,7 @@ key;en;it
 !Kittens_Name;Space Kittens;Gattini Spaziali
 !Sun_Name;Sun;Sole
 !Mercury_Name;Mercury;Mercurio
-!Venus_Name;Venus;Venus
+!Venus_Name;Venus;Venere
 !Earth_Name;Earth;Terra
 !Mars_Name;Mars;Marte
 !Jupiter_Name;Jupiter;Giove
@@ -70,3 +72,4 @@ key;en;it
 !Next;Next;Prossimo
 !UnknownParticle_Name;Unknown Particle;Particella Sconosciuta
 !UnknownParticle_Desc;You have not discovered this particle yet;Non hai ancora scoperto questa particella
+!Astro_Unit;Astronomical units;Unità astronomiche

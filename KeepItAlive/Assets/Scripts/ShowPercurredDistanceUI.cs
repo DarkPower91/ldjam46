@@ -38,11 +38,11 @@ public class ShowPercurredDistanceUI : MonoBehaviour
                 {
                     string exp = distToStiring.Substring(distToStiring.Length - 4);
                     string firstPart = distToStiring.Substring(0,4);
-                    scoreText.text = extraTextBefore + firstPart + exp + extraTextAfter;
+                    scoreText.text = LocalizationData.GetDescription(extraTextBefore) + " " + firstPart + exp + " " + LocalizationData.GetDescription(extraTextAfter);
                 } 
                 else 
                 {
-                    scoreText.text = extraTextBefore + distToStiring + extraTextAfter;
+                    scoreText.text = LocalizationData.GetDescription(extraTextBefore) + " " + distToStiring + " " + LocalizationData.GetDescription(extraTextAfter);
                 }
             }
         }

@@ -109,37 +109,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neutrinoPercurredDistance: 0
   playerDistanceComponent: {fileID: 0}
-  extraTextBefore: 'You reached '
+  extraTextBefore: '!Reached'
   extraTextAfter: 
   timeExposedString: 3
   planets:
   - reached: 0
-    planetName: Mercury
+    planetName: '!Sailor_Mercury'
     planetDistance: 0.3871
   - reached: 0
-    planetName: Venus
+    planetName: '!Sailor_Venus'
     planetDistance: 0.723
   - reached: 0
-    planetName: Earth
+    planetName: '!Sailor_Earth'
     planetDistance: 1
   - reached: 0
-    planetName: Mars
+    planetName: '!Sailor_Mars'
     planetDistance: 1.52
   - reached: 0
-    planetName: Jupiter
+    planetName: '!Sailor_Jupiter'
     planetDistance: 5.2
   - reached: 0
-    planetName: Saturn
+    planetName: '!Sailor_Saturn'
     planetDistance: 9.6
   - reached: 0
-    planetName: Uranus
+    planetName: '!Sailor_Uranus'
     planetDistance: 19.2
   - reached: 0
-    planetName: Neptune
+    planetName: '!Sailor_Neptune'
     planetDistance: 30.06
   - reached: 0
-    planetName: Pluto
+    planetName: '!Sailor_Pluto'
     planetDistance: 39.44
   - reached: 0
-    planetName: Outside
+    planetName: '!Sailor_Outside'
     planetDistance: 39.45

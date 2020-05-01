@@ -45,22 +45,12 @@ public class PlanetaryDistance : MonoBehaviour
                     {
                         if (playerDistanceComponent.neutrinoPercurredDistance >= planet.planetDistance)
                         {
-                            if (planet.planetName == "Earth") 
-                            {
-                                scoreText.text = extraTextBefore + " " + planet.planetName + "! Say hello to Gino! " + extraTextAfter;
-                            }
-                            else if (planet.planetName == "Pluto") 
-                            {
-                                scoreText.text = extraTextBefore + " " + planet.planetName + "! actually, it's not a planet, but he's cute! " + extraTextAfter;
-                            }
-                            else if (planet.planetName == "Outside") 
-                            {
-                                scoreText.text = "You are now leaving the Solar system!";
-                            }
-                            else
-                            {
-                                scoreText.text = extraTextBefore + " " + planet.planetName + "! " + extraTextAfter;
-                            }
+
+                            scoreText.text = LocalizationData.GetDescription(extraTextBefore)
+                                             + " " 
+                                             + LocalizationData.GetDescription(planet.planetName)
+                                             + LocalizationData.GetDescription(extraTextAfter);
+
                             planet.reached = true;
                             StartCoroutine(awaitFunc());
                         }
