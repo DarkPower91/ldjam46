@@ -22,5 +22,9 @@ public class HideWithFlow : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+        else
+        {
+            this.gameObject.SetActive(true);
+        }
     }
 }

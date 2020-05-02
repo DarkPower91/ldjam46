@@ -20,4 +20,16 @@ public static class LocalizationData
             return key;
         }
     }
+
+    public static bool IsIta
+    {
+        set 
+        {
+            isIta = value;
+        }
+        get 
+        {
+            return isIta;
+        }
+    }
 }
