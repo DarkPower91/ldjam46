@@ -10,6 +10,7 @@ TagManager:
   - MuteManager
   - SaveData
   - LocalizationData
+  - LanguageManager
   layers:
   - Default
   - TransparentFX

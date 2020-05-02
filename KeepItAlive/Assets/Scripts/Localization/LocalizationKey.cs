@@ -13,10 +13,21 @@ public class LocalizationKey : MonoBehaviour
     private void Awake() 
     {
         shownTextPro = GetComponent<TMP_Text>();  
-        shownText = GetComponent<Text>();        
+        shownText = GetComponent<Text>(); 
+        GameplayEvents.LanguageChange += OnLanguageChange;
+    }
+
+    private void OnDestroy() 
+    {
+        GameplayEvents.LanguageChange -= OnLanguageChange;
     }
 
     private void OnEnable() 
+    {
+       OnLanguageChange();
+    }
+
+    private void OnLanguageChange() 
     {
         // if exists, from its key, get the data from LocalizationData ; else return key
         string data = LocalizationData.GetDescription(key);
