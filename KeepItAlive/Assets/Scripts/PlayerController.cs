@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     #region Public fields
-    public Vector3 velocity;
     public Vector3 startingPosition;
+    public float velocity_module = 2;
     #endregion
     
     #region Private fields
@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private float[] objectSize = {0,0,0};
     private float[] minValues = {0,0,0};
     private float[] maxValues = {0,0,0};
+    private Vector3 versor;
     private Vector3 axis_position;
     private string[] command = {"Horizontal", "Vertical", "Ano"};
     #endregion
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
         maxValues[0] = screenBounds.x - objectSize[0]; 
         maxValues[1] = screenBounds.y - objectSize[1];
+
+        //velocity_module = velocity[0]; //Mathf.Sqrt(velocity[0]*velocity[0] + velocity[1]*velocity[1] + velocity[2]*velocity[2]);
     }
 
     void Update()
@@ -44,12 +47,23 @@ public class PlayerController : MonoBehaviour
         if(FlowManager.GetGameState() == GameState.InGame)
         {
             axis_position = transform.position; 
-
+            for (int i=0; i<2; i++) 
+            {
+                if (i==3)
+                {
+                    versor[i] = 0;
+                }
+                else
+                {
+                    versor[i] = Input.GetAxis(command[i]);
+                }
+            }
+            versor = Vector3.Normalize(versor);
             for (int i=0; i < 3; i++) 
             { 
                 if (i!=2) 
                 {
-                    axis_position[i] += Input.GetAxis(command[i]) * velocity[i] * Time.deltaTime;
+                    axis_position[i] +=versor[i] * velocity_module * Time.deltaTime;
                 } 
                 else
                 {
