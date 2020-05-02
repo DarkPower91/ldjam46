@@ -47,9 +47,9 @@ public class PlayerController : MonoBehaviour
         if(FlowManager.GetGameState() == GameState.InGame)
         {
             axis_position = transform.position; 
-            for (int i=0; i<2; i++) 
+            for (int i=0; i<3; i++) 
             {
-                if (i==3)
+                if (i==2)
                 {
                     versor[i] = 0;
                 }
