@@ -12,6 +12,7 @@ public class MainMenuUIManager : MonoBehaviour
 
     public void ActivateDex()
     {
+        FlowManager.SetFlowState(GameState.InDex);
         ActiveCanvas.SetActive(false);
         DexCanvas.SetActive(true);
         ActiveCanvas = DexCanvas;

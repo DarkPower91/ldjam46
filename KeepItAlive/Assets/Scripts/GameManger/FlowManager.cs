@@ -7,6 +7,7 @@ public enum GameState
 {
     MainMenu,
     InCredits,
+    InDex,
     InGame,
     InPause,
     GameOver

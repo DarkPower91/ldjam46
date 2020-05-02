@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HideWithFlow : MonoBehaviour
 {
-    public GameState HiddenInFlowState = GameState.MainMenu;
+    public GameState[] HiddenInFlowStates;
 
     void Start()
     {
@@ -18,13 +18,13 @@ public class HideWithFlow : MonoBehaviour
 
     private void OnFlowStateChanged(GameState newState)
     {
-        if(newState == HiddenInFlowState)
+        bool needToHide = false; 
+        
+        foreach(var state in HiddenInFlowStates)
         {
-            this.gameObject.SetActive(false);
+            needToHide |= newState == state;
         }
-        else
-        {
-            this.gameObject.SetActive(true);
-        }
+
+        this.gameObject.SetActive(!needToHide);
     }
 }

@@ -794,7 +794,7 @@ RectTransform:
   m_GameObject: {fileID: 536054605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.333125, y: 0.333125, z: 0.333125}
+  m_LocalScale: {x: 0.50875, y: 0.50875, z: 0.50875}
   m_Children:
   - {fileID: 1727797822}
   m_Father: {fileID: 0}
@@ -802,8 +802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 266.5, y: 150}
-  m_SizeDelta: {x: 1600, y: 0}
+  m_AnchoredPosition: {x: 407, y: 229}
+  m_SizeDelta: {x: 1599.9999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536054610
 MonoBehaviour:
@@ -993,6 +993,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MuteManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247360160171247821, guid: 448cd15d4b3ab49e7977718baade3aad,
+        type: 3}
+      propertyPath: HiddenInFlowStates.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247360160171247821, guid: 448cd15d4b3ab49e7977718baade3aad,
+        type: 3}
+      propertyPath: HiddenInFlowStates.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247360160171247821, guid: 448cd15d4b3ab49e7977718baade3aad,
+        type: 3}
+      propertyPath: HiddenInFlowStates.Array.data[0]
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 448cd15d4b3ab49e7977718baade3aad, type: 3}
@@ -2370,6 +2385,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LanguageManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575803904831545233, guid: 5e783087329841d4399dbb23c7b369f8,
+        type: 3}
+      propertyPath: HiddenInFlowStates.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575803904831545233, guid: 5e783087329841d4399dbb23c7b369f8,
+        type: 3}
+      propertyPath: HiddenInFlowStates.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575803904831545233, guid: 5e783087329841d4399dbb23c7b369f8,
+        type: 3}
+      propertyPath: HiddenInFlowStates.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e783087329841d4399dbb23c7b369f8, type: 3}

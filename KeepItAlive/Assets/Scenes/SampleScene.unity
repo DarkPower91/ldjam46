@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b4e3fa109c4492694015e9e0f434bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HiddenInFlowState: 4
+  HiddenInFlowStates: 05000000
 --- !u!114 &1932222688 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2349124506805706616, guid: ddcbdf1c61c8f470cb8f88f63987e717,

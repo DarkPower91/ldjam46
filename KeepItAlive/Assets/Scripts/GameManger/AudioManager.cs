@@ -48,32 +48,36 @@ public class AudioManager : MonoBehaviour
 
     void OnGameStateChanged(GameState newState)
     {
-        if(newState != m_PreviousGameState && newState != GameState.GameOver)
+        if(newState != m_PreviousGameState && newState != GameState.GameOver && newState != GameState.InCredits && newState != GameState.InDex)
         {
-            m_BackgroundMusicSource.Stop();
             switch(newState)
             {
                 case GameState.MainMenu:
                 {
+                    m_BackgroundMusicSource.Stop();
                     m_BackgroundMusicSource.clip = m_MainMenuSound;
                     m_BackgroundMusicSource.loop = true;
+                    m_BackgroundMusicSource.Play();
                     break;
                 }
                 case GameState.InGame:
                 {
+                    m_BackgroundMusicSource.Stop();
                     m_BackgroundMusicSource.clip = m_InGameSoundIntro;
                     m_BackgroundMusicSource.loop = false;
+                    m_BackgroundMusicSource.Play();
                     break;
                 }
+                /*
                 case GameState.InCredits:
                 {
                     m_BackgroundMusicSource.clip = m_InCreditsEasterEgg;
                     m_BackgroundMusicSource.loop = true;
                     break;
                 }
+                */
             }
             m_PreviousGameState = newState;
-            m_BackgroundMusicSource.Play();
         }
     }
 
