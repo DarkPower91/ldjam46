@@ -1272,6 +1272,12 @@ PrefabInstance:
       propertyPath: playerDistanceComponent
       value: 
       objectReference: {fileID: 905827861}
+    - target: {fileID: 2448465251185674467, guid: dc71c2feb0b01f64180c551d3fc8f6cd,
+        type: 3}
+      propertyPath: planets
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c454d2c10ac3b64dad014caa8ce4e22,
+        type: 2}
     - target: {fileID: 2448465251185674470, guid: dc71c2feb0b01f64180c551d3fc8f6cd,
         type: 3}
       propertyPath: m_Name
@@ -1390,6 +1396,52 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1226726817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1240095038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240095040}
+  - component: {fileID: 1240095039}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1240095039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240095038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7adeb465ecccbc40b7646d80fe9b6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPercurredDistance: {fileID: 905827861}
+  planets: {fileID: 11400000, guid: 5c454d2c10ac3b64dad014caa8ce4e22, type: 2}
+  speed: 1
+--- !u!4 &1240095040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240095038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1363231650
 PrefabInstance:
   m_ObjectHideFlags: 0

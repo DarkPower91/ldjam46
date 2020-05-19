@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e5b0d5fe340384383145d7e06ce1a4, type: 3}
+  m_Name: PlanetsDB
+  m_EditorClassIdentifier: 
+  planets:
+  - planetName: '!Sailor_Mercury'
+    planetDistance: 0.3871
+    planetGameObject: {fileID: 2071601013606574819, guid: d7caad6125c0e7f45a8927dd3a65b176,
+      type: 3}
+  - planetName: '!Sailor_Venus'
+    planetDistance: 0.723
+    planetGameObject: {fileID: 2071601013606574819, guid: ddb509f7175307b448ddbb93ca0c125a,
+      type: 3}
+  - planetName: '!Sailor_Earth'
+    planetDistance: 1
+    planetGameObject: {fileID: 2071601013606574819, guid: 1a9182d9cb40a4e4fb6c0dee1d2b27c3,
+      type: 3}
+  - planetName: '!Sailor_Mars'
+    planetDistance: 1.52
+    planetGameObject: {fileID: 2071601013606574819, guid: c076ab71d3c8de64f9a0da05e05c34aa,
+      type: 3}
+  - planetName: '!Sailor_Jupiter'
+    planetDistance: 5.2
+    planetGameObject: {fileID: 2071601013606574819, guid: 18fdfc2c6da678742a99aea16c7beeea,
+      type: 3}
+  - planetName: '!Sailor_Saturn'
+    planetDistance: 9.6
+    planetGameObject: {fileID: 2071601013606574819, guid: 13f87a1729b16274eb8de226e4de1791,
+      type: 3}
+  - planetName: '!Sailor_Uranus'
+    planetDistance: 19.2
+    planetGameObject: {fileID: 2071601013606574819, guid: 03991357dae122743b24b36f22e65695,
+      type: 3}
+  - planetName: '!Sailor_Neptune'
+    planetDistance: 30.06
+    planetGameObject: {fileID: 2071601013606574819, guid: b1c085d38f6b694498893f3b4ca1b110,
+      type: 3}
+  - planetName: '!Sailor_Pluto'
+    planetDistance: 39.44
+    planetGameObject: {fileID: 2071601013606574819, guid: bf2cf977da7090c44aea9343516e1b3b,
+      type: 3}
+  - planetName: '!Sailor_Outside'
+    planetDistance: 39.45
+    planetGameObject: {fileID: 0}

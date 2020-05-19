@@ -57,4 +57,9 @@ public class ComputePercurredDistance : MonoBehaviour
     {
         powerUpExtra += amount;
     }
+
+    public float getPercurredDistance() 
+    {
+        return neutrinoPercurredDistance;
+    }
 }
