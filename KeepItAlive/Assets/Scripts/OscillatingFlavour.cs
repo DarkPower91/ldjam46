@@ -76,6 +76,11 @@ public class OscillatingFlavour : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other) 
     {
+        #if UNITY_EDITOR
+        if(GameObject.FindGameObjectWithTag("DebugManager").GetComponent<DebugManager>().isInGodMode)
+            return;
+        #endif
+
         FlavourDefinition otherFlavour = other.gameObject.GetComponent<FlavourDefinition>();
         if (otherFlavour != null) 
         {
