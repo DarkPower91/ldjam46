@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Bendoni"
+  given-names: "Alessio" 
+  role: "Lead Programmer"
+- family-names: "Bombini"
+  given-names: "Alessandro" 
+  role: "Programmer"
+  orcid: "https://orcid.org/0000-0001-7225-3355"
+- family-names: "Barone"
+  given-names: "Serena" 
+  role: "2D Artist"
+- family-names: "Nesi"
+  given-names: "Francesca" 
+  role: "Game Design"
+- family-names: "Gavazzi"
+  given-names: "Gilberto" 
+  role: "Narrative design"
+- family-names: "Baldini"
+  given-names: "Francesco" 
+  role: "Sound design"
+title: "Gino the Neutrino"
+version: 1.0.0
+date-released: 2020-04-18
+url: "https://github.com/DarkPower91/ldjam46"
